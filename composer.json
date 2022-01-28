@@ -1,5 +1,5 @@
 {
-  "name": "q2mlib-amino-v2",
+  "name": "q2mlib/amino-v2",
   "description": "Best #1 Amino Library For PHP",
   "type": "library",
   "require": {
