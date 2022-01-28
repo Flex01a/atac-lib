@@ -1,14 +1,14 @@
 <?php
 
-function ataclib($message, $api, $sid)
+function q2mlib($message, $api, $sid)
 {
 
    if ($sid === ""){
    echo "sid required!";
    }
-
+else{
     if ($api === ""){
-        echo "atac lib has an error";
+        echo "q2m lib has an error";
     }
     elseif ($api === "send message"){
         
@@ -133,7 +133,7 @@ function ataclib($message, $api, $sid)
 
 
 
-$api = "https://service.narvii.com/api/v1/x34093447/s/chat/thread/ec6f0a01-70d8-41f8-8dc8-79de6470bfd1/sendmessage";
+$url = "https://service.narvii.com/api/v1/x34093447/s/chat/thread/ec6f0a01-70d8-41f8-8dc8-79de6470bfd1/message";
 
 $curl = curl_init($url);
 curl_setopt($curl, CURLOPT_URL, $url);
@@ -161,7 +161,7 @@ var_dump($resp);
 
 
 
-
+}
 
         
         
