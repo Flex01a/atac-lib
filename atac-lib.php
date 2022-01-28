@@ -2,6 +2,11 @@
 
 function ataclib($message, $api, $sid)
 {
+
+   if ($sid === ""){
+   echo "sid required!";
+   }
+
     if ($api === ""){
         echo "atac lib has an error";
     }
@@ -10,7 +15,7 @@ function ataclib($message, $api, $sid)
         
                                                          
                                                       
-#Dev-Ghazawi vip
+
 
 
 
@@ -142,7 +147,7 @@ $headers = array(
 curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
 
 $data = <<<DATA
-{"type":0,"content":"TestLib","clientRefId":912612485,"attachedObject":null,"timestamp":1639126123547}
+{"type":0,"content":"$message","clientRefId":912612485,"attachedObject":null,"timestamp":1639126123547}
 DATA;
 curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
 
