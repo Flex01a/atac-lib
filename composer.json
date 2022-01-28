@@ -13,8 +13,5 @@
     }
   ],
   "minimum-stability": "dev"
-"autoload": {
-    "psr-4": {
-      "q2mlib\\": "src/amino-v2/"
-    }
+
 }
