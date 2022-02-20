@@ -1,5 +1,5 @@
 {
-  "name": "q2mlib/amino-v2",
+  "name": "atac-amino/sors-flex",
   "description": "Best #1 Amino Library For PHP",
   "type": "library",
   "require": {
@@ -12,6 +12,11 @@
       "email": "flexdev@en40.com"
     }
   ],
+
+"autoload": {
+      "atacamino\\": "src/atacamino/"
+    }
+
   "minimum-stability": "dev"
 
 }
