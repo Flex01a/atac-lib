@@ -16,4 +16,5 @@
 "autoload": {
       "atacamino\\": "src/atacamino/"
     }
+}
 
